@@ -1,0 +1,55 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Votecircuit1.vf
+// /___/   /\     Timestamp : 04/04/2016 12:02:42
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3 -verilog /home/dinah/ELEC2141/lab_work/lab2/Votecircuit1/Votecircuit1.vf -w /home/dinah/ELEC2141/lab_work/lab2/Votecircuit1/Votecircuit1.sch
+//Design Name: Votecircuit1
+//Device: spartan3
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Votecircuit1(W, 
+                    X, 
+                    Y, 
+                    Z, 
+                    P);
+
+    input W;
+    input X;
+    input Y;
+    input Z;
+   output P;
+   
+   wire XLXN_1;
+   wire XLXN_11;
+   wire XLXN_17;
+   wire XLXN_18;
+   
+   AND2  XLXI_1 (.I0(XLXN_1), 
+                .I1(Z), 
+                .O(XLXN_17));
+   AND2  XLXI_2 (.I0(XLXN_11), 
+                .I1(X), 
+                .O(XLXN_18));
+   OR2  XLXI_3 (.I0(Y), 
+               .I1(W), 
+               .O(XLXN_1));
+   OR2  XLXI_4 (.I0(Z), 
+               .I1(Y), 
+               .O(XLXN_11));
+   OR2  XLXI_5 (.I0(XLXN_18), 
+               .I1(XLXN_17), 
+               .O(P));
+endmodule

@@ -21,8 +21,74 @@
 
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Votecircuit1.xise"/>
 
-  <files xmlns="http://www.xilinx.com/XMLSchema"/>
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="Votecircuit1.vf"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Votecircuit1_Votecircuit1_sch_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Votecircuit1_Votecircuit1_sch_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Votecircuit1_Votecircuit1_sch_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Votecircuit1_Votecircuit1_sch_tb_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+  </files>
 
-  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1459735361" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1459735361">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1459735854" xil_pn:in_ck="-1724220463177762446" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1459735854">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Votecircuit1_tbw.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1459735361" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="4691857511160802597" xil_pn:start_ts="1459735361">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1459735362" xil_pn:in_ck="9213319151178052814" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-1029214457940955427" xil_pn:start_ts="1459735361">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Votecircuit1.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1459735362" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="6716314832180030635" xil_pn:start_ts="1459735362">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1459735453" xil_pn:in_ck="2731962191430730878" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1459735453">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Votecircuit1.vf"/>
+      <outfile xil_pn:name="Votecircuit1_tbw.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1459735455" xil_pn:in_ck="2731962191430730878" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="6454584969908487405" xil_pn:start_ts="1459735453">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Votecircuit1_Votecircuit1_sch_tb_beh.prj"/>
+      <outfile xil_pn:name="Votecircuit1_Votecircuit1_sch_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1459735455" xil_pn:in_ck="-6371105158574441564" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-1215035693238326026" xil_pn:start_ts="1459735455">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Votecircuit1_Votecircuit1_sch_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+    </transform>
+  </transforms>
 
 </generated_project>
