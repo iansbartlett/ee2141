@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/home/dinah/ELEC2141/lab_work/lab2/Votecircuit3/Votecircuit3_Votecircuit3_sch_tb_isim_beh.exe" -prj "/home/dinah/ELEC2141/lab_work/lab2/Votecircuit3/Votecircuit3_Votecircuit3_sch_tb_beh.prj" "work.Votecircuit3_Votecircuit3_sch_tb" "work.glbl" 

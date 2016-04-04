@@ -1,0 +1,3 @@
+verilog work "Votecircuit2.vf"
+verilog work "Votecircuit2_tbw.v"
+verilog work "/home/dinah/xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

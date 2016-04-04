@@ -1,0 +1,287 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Votecircuit3.vf
+// /___/   /\     Timestamp : 04/04/2016 12:27:27
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3 -verilog /home/dinah/ELEC2141/lab_work/lab2/Votecircuit3/Votecircuit3.vf -w /home/dinah/ELEC2141/lab_work/lab2/Votecircuit3/Votecircuit3.sch
+//Design Name: Votecircuit3
+//Device: spartan3
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module OR9_MXILINX_Votecircuit3(I0, 
+                                I1, 
+                                I2, 
+                                I3, 
+                                I4, 
+                                I5, 
+                                I6, 
+                                I7, 
+                                I8, 
+                                O);
+
+    input I0;
+    input I1;
+    input I2;
+    input I3;
+    input I4;
+    input I5;
+    input I6;
+    input I7;
+    input I8;
+   output O;
+   
+   wire dummy;
+   wire S0;
+   wire S1;
+   wire O_DUMMY;
+   
+   assign O = O_DUMMY;
+   OR4  I_36_94 (.I0(I0), 
+                .I1(I1), 
+                .I2(I2), 
+                .I3(I3), 
+                .O(S0));
+   OR3  I_36_110 (.I0(S0), 
+                 .I1(S1), 
+                 .I2(I8), 
+                 .O(O_DUMMY));
+   OR4  I_36_119 (.I0(I4), 
+                 .I1(I5), 
+                 .I2(I6), 
+                 .I3(I7), 
+                 .O(S1));
+   (* RLOC = "X0Y0" *) 
+   FMAP  I_36_120 (.I1(I0), 
+                  .I2(I1), 
+                  .I3(I2), 
+                  .I4(I3), 
+                  .O(S0));
+   (* RLOC = "X0Y0" *) 
+   FMAP  I_36_121 (.I1(I4), 
+                  .I2(I5), 
+                  .I3(I6), 
+                  .I4(I7), 
+                  .O(S1));
+   (* RLOC = "X0Y1" *) 
+   FMAP  I_36_122 (.I1(S0), 
+                  .I2(S1), 
+                  .I3(I8), 
+                  .I4(dummy), 
+                  .O(O_DUMMY));
+endmodule
+`timescale 1ns / 1ps
+
+module D4_16E_MXILINX_Votecircuit3(A0, 
+                                   A1, 
+                                   A2, 
+                                   A3, 
+                                   E, 
+                                   D0, 
+                                   D1, 
+                                   D2, 
+                                   D3, 
+                                   D4, 
+                                   D5, 
+                                   D6, 
+                                   D7, 
+                                   D8, 
+                                   D9, 
+                                   D10, 
+                                   D11, 
+                                   D12, 
+                                   D13, 
+                                   D14, 
+                                   D15);
+
+    input A0;
+    input A1;
+    input A2;
+    input A3;
+    input E;
+   output D0;
+   output D1;
+   output D2;
+   output D3;
+   output D4;
+   output D5;
+   output D6;
+   output D7;
+   output D8;
+   output D9;
+   output D10;
+   output D11;
+   output D12;
+   output D13;
+   output D14;
+   output D15;
+   
+   
+   AND5B3  I_36_53 (.I0(A0), 
+                   .I1(A1), 
+                   .I2(A2), 
+                   .I3(A3), 
+                   .I4(E), 
+                   .O(D8));
+   AND5B2  I_36_54 (.I0(A1), 
+                   .I1(A2), 
+                   .I2(E), 
+                   .I3(A3), 
+                   .I4(A0), 
+                   .O(D9));
+   AND5B2  I_36_55 (.I0(A0), 
+                   .I1(A2), 
+                   .I2(E), 
+                   .I3(A3), 
+                   .I4(A1), 
+                   .O(D10));
+   AND5B1  I_36_56 (.I0(A2), 
+                   .I1(A0), 
+                   .I2(A1), 
+                   .I3(A3), 
+                   .I4(E), 
+                   .O(D11));
+   AND5B2  I_36_57 (.I0(A0), 
+                   .I1(A1), 
+                   .I2(E), 
+                   .I3(A3), 
+                   .I4(A2), 
+                   .O(D12));
+   AND5B1  I_36_58 (.I0(A1), 
+                   .I1(A0), 
+                   .I2(A2), 
+                   .I3(A3), 
+                   .I4(E), 
+                   .O(D13));
+   AND5B1  I_36_59 (.I0(A0), 
+                   .I1(A1), 
+                   .I2(A2), 
+                   .I3(A3), 
+                   .I4(E), 
+                   .O(D14));
+   AND5  I_36_60 (.I0(A3), 
+                 .I1(A2), 
+                 .I2(A1), 
+                 .I3(A0), 
+                 .I4(E), 
+                 .O(D15));
+   AND5B2  I_36_61 (.I0(A3), 
+                   .I1(A0), 
+                   .I2(E), 
+                   .I3(A2), 
+                   .I4(A1), 
+                   .O(D6));
+   AND5B1  I_36_62 (.I0(A3), 
+                   .I1(A2), 
+                   .I2(A1), 
+                   .I3(A0), 
+                   .I4(E), 
+                   .O(D7));
+   AND5B2  I_36_63 (.I0(A3), 
+                   .I1(A1), 
+                   .I2(E), 
+                   .I3(A2), 
+                   .I4(A0), 
+                   .O(D5));
+   AND5B3  I_36_64 (.I0(A0), 
+                   .I1(A1), 
+                   .I2(A3), 
+                   .I3(A2), 
+                   .I4(E), 
+                   .O(D4));
+   AND5B2  I_36_65 (.I0(A2), 
+                   .I1(A3), 
+                   .I2(E), 
+                   .I3(A0), 
+                   .I4(A1), 
+                   .O(D3));
+   AND5B3  I_36_66 (.I0(A0), 
+                   .I1(A3), 
+                   .I2(A2), 
+                   .I3(A1), 
+                   .I4(E), 
+                   .O(D2));
+   AND5B3  I_36_67 (.I0(A1), 
+                   .I1(A2), 
+                   .I2(A3), 
+                   .I3(A0), 
+                   .I4(E), 
+                   .O(D1));
+   AND5B4  I_36_68 (.I0(A3), 
+                   .I1(A2), 
+                   .I2(A1), 
+                   .I3(A0), 
+                   .I4(E), 
+                   .O(D0));
+endmodule
+`timescale 1ns / 1ps
+
+module Votecircuit3(W, 
+                    X, 
+                    Y, 
+                    Z, 
+                    P);
+
+    input W;
+    input X;
+    input Y;
+    input Z;
+   output P;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_6;
+   wire XLXN_9;
+   wire XLXN_10;
+   wire XLXN_12;
+   wire XLXN_13;
+   wire XLXN_14;
+   
+   (* HU_SET = "XLXI_1_0" *) 
+   D4_16E_MXILINX_Votecircuit3  XLXI_1 (.A0(Z), 
+                                       .A1(Y), 
+                                       .A2(X), 
+                                       .A3(W), 
+                                       .E(XLXN_14), 
+                                       .D0(), 
+                                       .D1(), 
+                                       .D2(), 
+                                       .D3(XLXN_1), 
+                                       .D4(), 
+                                       .D5(XLXN_2), 
+                                       .D6(XLXN_3), 
+                                       .D7(XLXN_4), 
+                                       .D8(), 
+                                       .D9(XLXN_6), 
+                                       .D10(), 
+                                       .D11(XLXN_9), 
+                                       .D12(), 
+                                       .D13(XLXN_10), 
+                                       .D14(XLXN_12), 
+                                       .D15(XLXN_13));
+   (* HU_SET = "XLXI_2_1" *) 
+   OR9_MXILINX_Votecircuit3  XLXI_2 (.I0(XLXN_13), 
+                                    .I1(XLXN_12), 
+                                    .I2(XLXN_10), 
+                                    .I3(XLXN_9), 
+                                    .I4(XLXN_6), 
+                                    .I5(XLXN_4), 
+                                    .I6(XLXN_3), 
+                                    .I7(XLXN_2), 
+                                    .I8(XLXN_1), 
+                                    .O(P));
+   VCC  XLXI_3 (.P(XLXN_14));
+endmodule

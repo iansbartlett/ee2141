@@ -1,0 +1,157 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Votecircuit2.vf
+// /___/   /\     Timestamp : 04/04/2016 12:24:52
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3 -verilog /home/dinah/ELEC2141/lab_work/lab2/Votecircuit2/Votecircuit2.vf -w /home/dinah/ELEC2141/lab_work/lab2/Votecircuit2/Votecircuit2.sch
+//Design Name: Votecircuit2
+//Device: spartan3
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module M2_1E_MXILINX_Votecircuit2(D0, 
+                                  D1, 
+                                  E, 
+                                  S0, 
+                                  O);
+
+    input D0;
+    input D1;
+    input E;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND3  I_36_30 (.I0(D1), 
+                 .I1(E), 
+                 .I2(S0), 
+                 .O(M1));
+   AND3B1  I_36_31 (.I0(S0), 
+                   .I1(E), 
+                   .I2(D0), 
+                   .O(M0));
+   OR2  I_36_38 (.I0(M1), 
+                .I1(M0), 
+                .O(O));
+endmodule
+`timescale 1ns / 1ps
+
+module M8_1E_MXILINX_Votecircuit2(D0, 
+                                  D1, 
+                                  D2, 
+                                  D3, 
+                                  D4, 
+                                  D5, 
+                                  D6, 
+                                  D7, 
+                                  E, 
+                                  S0, 
+                                  S1, 
+                                  S2, 
+                                  O);
+
+    input D0;
+    input D1;
+    input D2;
+    input D3;
+    input D4;
+    input D5;
+    input D6;
+    input D7;
+    input E;
+    input S0;
+    input S1;
+    input S2;
+   output O;
+   
+   wire M01;
+   wire M03;
+   wire M23;
+   wire M45;
+   wire M47;
+   wire M67;
+   
+   (* HU_SET = "I_M01_3" *) 
+   M2_1E_MXILINX_Votecircuit2  I_M01 (.D0(D0), 
+                                     .D1(D1), 
+                                     .E(E), 
+                                     .S0(S0), 
+                                     .O(M01));
+   MUXF5_L  I_M03 (.I0(M01), 
+                  .I1(M23), 
+                  .S(S1), 
+                  .LO(M03));
+   (* HU_SET = "I_M23_2" *) 
+   M2_1E_MXILINX_Votecircuit2  I_M23 (.D0(D2), 
+                                     .D1(D3), 
+                                     .E(E), 
+                                     .S0(S0), 
+                                     .O(M23));
+   (* HU_SET = "I_M45_1" *) 
+   M2_1E_MXILINX_Votecircuit2  I_M45 (.D0(D4), 
+                                     .D1(D5), 
+                                     .E(E), 
+                                     .S0(S0), 
+                                     .O(M45));
+   MUXF5_L  I_M47 (.I0(M45), 
+                  .I1(M67), 
+                  .S(S1), 
+                  .LO(M47));
+   (* HU_SET = "I_M67_0" *) 
+   M2_1E_MXILINX_Votecircuit2  I_M67 (.D0(D6), 
+                                     .D1(D7), 
+                                     .E(E), 
+                                     .S0(S0), 
+                                     .O(M67));
+   MUXF6  I_O (.I0(M03), 
+              .I1(M47), 
+              .S(S2), 
+              .O(O));
+endmodule
+`timescale 1ns / 1ps
+
+module Votecircuit2(W, 
+                    X, 
+                    Y, 
+                    Z, 
+                    P);
+
+    input W;
+    input X;
+    input Y;
+    input Z;
+   output P;
+   
+   wire XLXN_4;
+   wire XLXN_5;
+   
+   (* HU_SET = "XLXI_2_4" *) 
+   M8_1E_MXILINX_Votecircuit2  XLXI_2 (.D0(XLXN_5), 
+                                      .D1(Z), 
+                                      .D2(Z), 
+                                      .D3(XLXN_4), 
+                                      .D4(Z), 
+                                      .D5(Z), 
+                                      .D6(Z), 
+                                      .D7(XLXN_4), 
+                                      .E(XLXN_4), 
+                                      .S0(Y), 
+                                      .S1(X), 
+                                      .S2(W), 
+                                      .O(P));
+   GND  XLXI_3 (.G(XLXN_5));
+   VCC  XLXI_4 (.P(XLXN_4));
+endmodule

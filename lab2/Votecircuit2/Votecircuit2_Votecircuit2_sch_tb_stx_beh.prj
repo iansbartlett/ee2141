@@ -1,0 +1,2 @@
+verilog isim_temp "Votecircuit2_tbw.v"
+verilog isim_temp "/home/dinah/xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,0 +1,29 @@
+Command line:
+   Votecircuit3_Votecircuit3_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  48813
+
+Mon Apr  4 12:27:31 2016
+
+
+ Elaboration Time: 0.02 sec
+
+ Current Memory Usage: 196.063 Meg
+
+ Total Signals          : 222
+ Total Nets             : 71
+ Total Signal Drivers   : 62
+ Total Blocks           : 28
+ Total Primitive Blocks : 24
+ Total Processes        : 64
+ Total Traceable Variables  : 22
+ Total Scalar Nets and Variables : 155
+Total Line Count : 24
+
+ Total Simulation Time: 0.03 sec
+
+ Current Memory Usage: 271.565 Meg
+
+Mon Apr  4 12:27:46 2016
+
